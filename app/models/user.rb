@@ -3,4 +3,6 @@ class User < ApplicationRecord
     has_many :comments
     has_many :commented_notebooks, through: :comments,
         source: :notebook
+
+    has_secure_password 
 end

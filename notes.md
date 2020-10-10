@@ -1,4 +1,4 @@
-Notes Application 
+<!-- Notes Application 
 
 Notebook 
     - belongs_to :user
@@ -14,7 +14,7 @@ User
     - has_many :commented_notebooks, through :comments
     - has_many :categories, though :notebooks
     - email 
-    - password-digest
+    - password
 
 Comments
     - belongs_to :user 
@@ -24,4 +24,4 @@ Comments
 Categories
     - name
     - has-many :notebooks
-    - has_many :users, though :notebooks
+    - has_many :users, though :notebooks -->
