@@ -1,0 +1,15 @@
+<h1> New Notebook</h1>
+
+<%= form_for(@notebook) do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+
+    <%= f.hidden_field :user_id, value: session[:user_id] %>
+
+    <%= f.submit %>
+
+<% end %>
