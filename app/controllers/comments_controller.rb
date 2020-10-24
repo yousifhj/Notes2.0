@@ -1,6 +1,11 @@
 class CommentsController < ApplicationController
+    
+    def index 
+        @comments = Comments.all
+    end 
+    
     def new 
-        @comments = Comments.new 
+        @comments = Comment.new 
     end 
 
     def create
@@ -13,9 +18,11 @@ class CommentsController < ApplicationController
     end
 
     def show 
+        @comment = Comment.find_by(id: params[:id])
     end 
 
     def edit
+        @comment = Comment.find_by(id: params[:id])
     end 
 
 
