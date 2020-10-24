@@ -14,6 +14,7 @@
     <% if logged_in?%>
         <%= link_to "Add a Notebook", new_notebook_path %> | 
         <%= link_to "All Notebooks", notebooks_path %> | 
+        <%= link_to "Add a comment", new_comment_path %> | 
         <%= link_to "Logout", logout_path, method:"delete"%>
       <% else %> 
         <%= link_to "Sign In", signup_path %> |
