@@ -1,10 +1,15 @@
-<h1>New Comment for <%= @comment.post.title%>!</h1>
+<h1>New Comment</h1>
 
-<%= form_for([@comment.post,@comment]) do |f|%>
+<%= form_for(@comment) do |f|%>
 
   <%= f.label :content %>
   <%= f.text_field :content %>
 
+  <%= f.label :user %>
+  <%= f.text_field :user %>
+
+  <%= f.label :notebookt %>
+  <%= f.text_field :notebook %>
 
   <%= f.submit %>
 
